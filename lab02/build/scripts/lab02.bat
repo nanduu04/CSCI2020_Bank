@@ -79,10 +79,10 @@ set CMD_LINE_ARGS=%*
 :execute
 @rem Setup the command line
 
-set CLASSPATH=%APP_HOME%\lib\lab02.jar;%APP_HOME%\lib\slf4j-api-1.7.21.jar;%APP_HOME%\lib\commons-csv-1.7.jar
+set CLASSPATH=%APP_HOME%\lib\lab02.jar;%APP_HOME%\lib\commons-csv-1.7.jar
 
 @rem Execute lab02
-"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %LAB02_OPTS%  -classpath "%CLASSPATH%" csci2020u.lab02.SimpleTest %CMD_LINE_ARGS%
+"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %LAB02_OPTS%  -classpath "%CLASSPATH%" gradleDemo.Demo %CMD_LINE_ARGS%
 
 :end
 @rem End local scope for the variables with windows NT shell

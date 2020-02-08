@@ -80,7 +80,7 @@ case "`uname`" in
     ;;
 esac
 
-CLASSPATH=$APP_HOME/lib/lab02.jar:$APP_HOME/lib/slf4j-api-1.7.21.jar:$APP_HOME/lib/commons-csv-1.7.jar
+CLASSPATH=$APP_HOME/lib/lab02.jar:$APP_HOME/lib/commons-csv-1.7.jar
 
 # Determine the Java command to use to start the JVM.
 if [ -n "$JAVA_HOME" ] ; then
@@ -178,6 +178,6 @@ save () {
 APP_ARGS=`save "$@"`
 
 # Collect all arguments for the java command, following the shell quoting and substitution rules
-eval set -- $DEFAULT_JVM_OPTS $JAVA_OPTS $LAB02_OPTS -classpath "\"$CLASSPATH\"" csci2020u.lab02.SimpleTest "$APP_ARGS"
+eval set -- $DEFAULT_JVM_OPTS $JAVA_OPTS $LAB02_OPTS -classpath "\"$CLASSPATH\"" gradleDemo.Demo "$APP_ARGS"
 
 exec "$JAVACMD" "$@"
